@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Fruticola Progresso - Contato</title>
+    <meta charset="UTF-8">
+    <style>
+        /* Estilos Globais */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FDF2E9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .imagem-lateral {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 0 250px 250px 0; 
+        }
+
+        .tabela-layout {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        /* Menu */
+        .menu a {
+            text-decoration: none;
+            color: #2E7D32; 
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .menu a:hover {
+            color: #E67E22; 
+        }
+
+        /* Conteúdo e Formulário */
+        .conteudo-texto {
+            padding: 40px;
+            color: #444;
+            text-align: center;
+        }
+
+        .texto-centralizado-wrapper {
+            max-width: 500px; /* Reduzi um pouco para o formulário ficar mais elegante */
+            margin: 0 auto;
+            text-align: left; /* Alinha labels e inputs à esquerda dentro do bloco central */
+        }
+
+        .titulo-contato {
+            color: #E67E22;
+            font-size: 42px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .subtitulo {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
+            font-size: 18px;
+        }
+
+        /* Estilização dos Inputs */
+        .campo-contato {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #CCC;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box; /* Garante que o padding não aumente a largura */
+            font-family: inherit;
+        }
+
+        textarea.campo-contato {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .botao-enviar {
+            background-color: #2E7D32;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .botao-enviar:hover {
+            background-color: #E67E22;
+        }
+
+        .rodape {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table class="tabela-layout" border="0">
+        <tr>
+            <td height="120" style="padding-left: 20px;">
+                <img src="Imagens/logo-1.png" alt="Logo Fazenda Progresso">
+            </td>
+            <td align="right" class="menu" style="padding-right: 40px;">
+                <a href="Index.html">Home</a> |
+                <a href="Valores.html">Valores</a> |
+                <a href="Contato.html">Contato</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="45%" valign="middle">
+                <img src="Imagens/Agrupar-9.png" class="imagem-lateral" alt="Contato Fazenda Progresso">
+            </td>
+
+            <td width="55%" valign="middle" class="conteudo-texto">
+                <div class="texto-centralizado-wrapper">
+                    <h2 class="titulo-contato">Fale Conosco</h2>
+                    <p class="subtitulo">Tem alguma dúvida ou sugestão? Envie uma mensagem para nossa equipe.</p>
+
+                    <form action="#" method="post">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" class="campo-contato" placeholder="Digite seu nome..." required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" class="campo-contato" placeholder="seuemail@exemplo.com" required>
+
+                        <label for="mensagem">Sua Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" class="campo-contato" placeholder="Como podemos ajudar?"></textarea>
+
+                        <button type="submit" class="botao-enviar">ENVIAR MENSAGEM</button>
+                    </form>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+             <td colspan="2" align="center" class="rodape">
+                <h4>© Todos os direitos reservados</h4>
+             </td>
+        </tr>
+    </table>
+
+</body>
+</html>
